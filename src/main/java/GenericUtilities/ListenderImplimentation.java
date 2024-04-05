@@ -11,7 +11,6 @@ import org.testng.ITestResult;
 
 public class ListenderImplimentation implements ITestListener{
 
-	@Override
 	public void onTestFailedWithTimeout(ITestResult result) {
 		String failed = result.getMethod().getMethodName();
 		TakesScreenshot ss = (TakesScreenshot)BaseClass.sdriver;
